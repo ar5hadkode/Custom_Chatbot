@@ -33,7 +33,7 @@ def retrieve_relevant_chunks(query, vectorstore, top_k=5):
     return [doc.page_content for doc in docs]
 
 def query_groq_basic(user_query):
-    api_key = "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"
+    api_key = "YOUR_GROQ_API_KEY"
     client = Groq(api_key=api_key)
     prompt = (
         f"You are an intelligent assistant. Answer the user's query concisely and accurately: '{user_query}'."
@@ -48,7 +48,7 @@ def query_groq_basic(user_query):
     return response.choices[0].message.content
 
 def query_groq_rag(relevant_chunks, user_query):
-    api_key = "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"
+    api_key = "YOUR_GROQ_API_KEY"
     client = Groq(api_key=api_key)
     context = "\n\n".join(relevant_chunks)
     prompt = (
