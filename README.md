@@ -1,20 +1,17 @@
-AgileKode Personal ChatBot
-Welcome to the AgileKode Personal ChatBot, a Streamlit-based AI chatbot capable of answering general questions or providing specific insights about the AgileKode portfolio. This project demonstrates an integration of advanced LLM models with retrieval-augmented generation (RAG) techniques for enhanced contextual responses.
+# AgileKode Personal ChatBot
 
-Features
-Two Interaction Modes:
-Ask Me Anything: General-purpose Q&A powered by Groq's LLM.
-Ask about AgileKode: Provides insights into the AgileKode portfolio using a preprocessed PDF file for context.
-PDF Knowledge Extraction:
-Processes the agilekode-portfolio.pdf file to create a vector database using FAISS and SentenceTransformers.
-Retrieval-Augmented Generation (RAG):
-Dynamically retrieves relevant excerpts from the vector database to generate accurate, context-aware responses.
-Session History:
-Maintains chat history for both modes, displayed interactively on the Streamlit interface.
-Interactive UI:
-Built with Streamlit, offering a clean and responsive user experience.
+AgileKode Personal ChatBot is an intelligent Streamlit application that answers questions in two modes:
+1. **Ask Me Anything:** A general-purpose chatbot to answer any query.
+2. **Ask about AgileKode:** A chatbot that uses a custom knowledge base (extracted from a PDF) to answer questions about AgileKode.
 
-Installation
-Prerequisites
-Python 3.8 or later
-Required Python packages listed in requirements.txt
+---
+
+## Features
+
+- **Multi-Mode Chat:** Switch between general-purpose and AgileKode-specific modes.
+- **PDF Parsing:** Extracts text from a PDF file for context-specific Q&A.
+- **Vector Database:** Uses FAISS to store and retrieve text chunks from the PDF for efficient query processing.
+- **Intelligent Responses:** Leverages the Groq API to generate concise and context-aware answers.
+- **Streamlit Interface:** Clean and interactive user interface for seamless interaction.
+
+---
